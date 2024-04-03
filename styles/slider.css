@@ -1,0 +1,154 @@
+.slider_container{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider_bar {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    position: relative;
+}
+@media screen and (min-width: 1200px) and (max-width: 1300px) {
+    .slider_container {
+      height: 65vh;
+    }
+}
+@media screen and (min-width: 1080px) and (max-width: 1200px) {
+    .slider_container {
+      height: 60vh;
+    }
+}
+@media screen and (min-width: 960px) and (max-width: 1080px) {
+    .slider_container {
+      height: 55vh;
+    }
+}
+@media screen and (min-width: 845px) and (max-width: 960px) {
+    .slider_container {
+      height: 50vh;
+    }
+}
+@media screen and (min-width: 720px) and (max-width: 845px) {
+    .slider_container {
+      height: 45vh;
+    }
+}
+@media screen and (min-width: 605px) and (max-width: 720px) {
+    .slider_container {
+      height: 40vh;
+    }
+}
+@media screen and (max-width: 605px) {
+    .slider_container {
+      height: 35vh;
+    }
+}
+
+.sl1 .slide{
+    background: url("https://th.bing.com/th/id/R.bff4b7da8a792ff85a0ee7a1d266b827?rik=RJ3H%2fc5l8zyD1g&riu=http%3a%2f%2f2.bp.blogspot.com%2f-0KeNxk83cjc%2fUhhh4pQwSBI%2fAAAAAAAAAFU%2fZe079qoTjIc%2fs1600%2fSteinsGateWallpaper.jpg&ehk=vGR6RuHnqsGrKQhA63Uvm3JJYdKPVBbq0H2igo%2bOFv0%3d&risl=&pid=ImgRaw&r=0") no-repeat center center;
+    background-size: cover;
+}
+.sl2 .slide{
+    background: url("https://vignette.wikia.nocookie.net/steins-gate/images/6/61/FRNDV.jpg/revision/latest?cb=20180602140538") no-repeat center center;
+    background-size: cover;
+}
+.sl3 .slide{
+    background: url("https://th.bing.com/th/id/R.fa5bd58f98b9dbb0569c7eae624275ea?rik=0q4KZgf7IRLYPQ&pid=ImgRaw&r=0") no-repeat center center;
+    background-size: cover;
+    background-position-y: 0;
+}
+.sl4 .slide{
+    background: url("https://i.redd.it/dvm703m3baf01.jpg") no-repeat center center;
+    background-size: cover;
+}
+.sl5 .slide{
+    background: url("https://th.bing.com/th/id/R.c9a9943c90faef0fad3198d98b2db0f6?rik=q6TRXdnsYXQICQ&riu=http%3a%2f%2f1.bp.blogspot.com%2f-pXUm38A91oc%2fUj9R4xB_g-I%2fAAAAAAAAASw%2f5VVWt2w3GZs%2fs1600%2fSteins-Gate.jpg&ehk=uRD1guvSh%2bo6C1b9W4x%2bbQ%2brJOVy8vbaMcJOzMrdZ2Q%3d&risl=&pid=ImgRaw&r=0") no-repeat center center;
+    background-size: cover;
+    background-position-y: 0;
+}
+.slide{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 0;
+    transition: 0.8s, opacity 0.6s, -webkit-filter 2.5s ease-out;
+
+}
+
+
+.slides, .slide_cover {
+    width: 100%;
+    height: 100%;
+}
+
+.slide_cover{
+    position: absolute;
+}
+
+.slides {
+    display: block;
+    align-items: center;
+    border-radius: 6px 6px 0 0;
+    box-shadow: 0 7px 20px rgba(254, 255, 219, 0.612);
+    position: relative;
+    overflow: hidden;
+}
+
+#sb1:checked ~ .slides .sl1 .slide,
+#sb2:checked ~ .slides .sl2 .slide,
+#sb3:checked ~ .slides .sl3 .slide,
+#sb4:checked ~ .slides .sl4 .slide,
+#sb5:checked ~ .slides .sl5 .slide {
+    opacity: 1;
+    z-index: 1;
+}
+
+.sbtn1, .sbtn2, .sbtn3, .sbtn4, .sbtn5{
+    position: absolute;
+    top: 92%;
+    z-index: 2;
+}
+
+.empty{
+    display: none;
+}
+
+.actual_buttons label {
+    display: block;
+    height: 10px;
+    width: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.5s;
+    background-color: rgb(255, 255, 255);
+}
+
+.actual_buttons label:hover,
+#sb1:checked ~ .actual_buttons label:nth-of-type(1),
+#sb2:checked ~ .actual_buttons label:nth-of-type(2),
+#sb3:checked ~ .actual_buttons label:nth-of-type(3),
+#sb4:checked ~ .actual_buttons label:nth-of-type(4),
+#sb5:checked ~ .actual_buttons label:nth-of-type(5) {
+  opacity: 0.8;
+}
+
+.sbtn1{
+    margin-left: 30%;
+}
+.sbtn2{
+    margin-left: 40%;
+}
+.sbtn3{
+    margin-left: 50%;
+}
+.sbtn4{
+    margin-left: 60%;
+}
+.sbtn5{
+    margin-left: 70%;
+}
