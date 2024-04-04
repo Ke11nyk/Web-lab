@@ -1,5 +1,5 @@
 .menu-container {
-    background-color: var(--color-primary);
+    background-color: #000000;
     background-image: url(../images/menu.jpg);
 }
 
@@ -25,7 +25,7 @@ menu {
 }
 
 menu a {
-    color: #fff;
+    color: #FFF;
     display: block;
     text-decoration: none;
     line-height: normal;
@@ -40,7 +40,7 @@ menu li{
     flex-basis: auto;
     padding: 0 1em;
     text-align: center;
-    border-left: 2px solid #ccc;
+    border-left: 2px solid #CCC;
     margin: 10px 0;
 }
 

@@ -1,7 +1,7 @@
 header {
-    background-color: var(--color-secondary);
+    background-color: #EFF0FA;
     padding: 20px;
-    color: var(--text-color-primary);
+    color: #000000;
 }
 
 header .container {
@@ -41,8 +41,8 @@ header .container {
 .logo img {
     min-height: 100px;
     min-width: 100px;
-    background-color: var(--color-primary);
-    border: 6px solid var(--color-primary);
+    background-color: #000000;
+    border: 6px solid #000000;
     box-sizing: border-box;
     float: left;
     margin-right: 0.5em;
@@ -83,8 +83,8 @@ header .container {
 }
 
 .contacts a {
-    color: var(--text-color-secondary);
+    color: #000000;
     font-weight: bold;
     text-decoration: none;
-    border-bottom: 1px dashed rgb(100, 100, 100);
+    border-bottom: 1px dashed #646464;
 }

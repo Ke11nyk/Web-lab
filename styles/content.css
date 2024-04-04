@@ -1,11 +1,10 @@
 main {
-  color: var(--text-color-primary);
+  color: #000000;
   padding: 10px;
 }
 
-
 a {
-  color: var(--text-color-primary);
+  color: #000000;
   text-decoration: none;
 }
 
@@ -65,17 +64,17 @@ a {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 4px;
-  color: var(--text-color-secondary);
+  color: #000000;
 }
 
 .side-menu a {
-  color: var(--text-color-secondary);
+  color: #000000;
   transition: color 0.5s;
   text-decoration: none;
 }
 
 .side-menu a:hover {
-  color: var(--text-color-secondary-hover);
+  color: #232323;
 }
 
 .side-menu li ul {
@@ -113,8 +112,8 @@ a {
 }
 
 .side-menu li.active-category li.active-subcategory > a, .side-menu li.active-category > a {
-  color: var(--text-color-primary);
-  border-bottom: 1px solid var(--text-color-primary);
+  color: #000000;
+  border-bottom: 1px solid #000000;
   font-weight: bolder;
 }
 
@@ -133,13 +132,13 @@ a {
 }
 
 .side-content > ul > li.active > a {
-  border-bottom: 1px solid var(--text-color-secondary);
+  border-bottom: 1px solid #000000;
 }
 
 .side-note {
   margin-top: 50px;
   text-align: center;
-  color: var(--text-color-primary);
+  color: #000000;
   font-size: 0.9em;
 }
 
@@ -178,13 +177,13 @@ a {
 }
 
 .labmem {
-  background-color: var(--color-secondary);
+  background-color: #EFF0FA;
   padding: 20px;
   border-radius: 6px;
-  height: var(--product-height);
-  max-height: var(--product-height);
-  min-width: var(--product-width);
-  max-width: var(--product-width);
+  height: 390px;
+  max-height: 390px;
+  min-width: 200px;
+  max-width: 200px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -192,12 +191,12 @@ a {
   gap: 0.7em;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease-in-out;
-  border-bottom: 8px solid var(--color-primary);
+  border-bottom: 8px solid #000000;
 }
 
 .labmem-img img {
-  width: var(--product-side);
-  height: var(--product-side);
+  width: 200px;
+  height: 200px;
   border-radius: 5px;
   background-color: #FFF;
   object-fit: cover;
@@ -223,7 +222,7 @@ a {
 }
 
 .labmem-info span {
-  color: var(--text-color-secondary);
+  color: #000000;
 }
 
 .labmem div:last-child {
@@ -237,13 +236,13 @@ a {
   justify-content: space-between;
   align-items: flex-end;
   font-size: 1.6em;
-  color: var(--text-color-primary);
+  color: #000000;
   font-weight: 600;
 }
 
 .lab-info-text {
-  color: var(--text-color-secondary);
-  border-top: 1px solid var(--text-color-secondary);
+  color: #000000;
+  border-top: 1px solid #000000;
   padding-top: 20px;
   width: 100%;
   display: flex;
@@ -253,4 +252,3 @@ a {
 .lab-info-text > div {
   flex: 50%;
 }
-

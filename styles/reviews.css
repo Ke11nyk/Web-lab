@@ -10,14 +10,14 @@
 }
 
 .review_container{
-    border: 2px solid rgb(54, 49, 36);
+    border: 2px solid #363124;
     box-shadow: 0 0 5px 1px rgba(150, 142, 119, 0.5);
     border-radius: 5px;
     padding: 10px;
 }
 
 .reviews_wrapper a{
-    color: black;
+    color: #000000;
     text-decoration: none;
     cursor: pointer;
 }
