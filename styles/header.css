@@ -42,7 +42,7 @@ header .container {
     min-height: 100px;
     min-width: 100px;
     background-color: #000000;
-    border: 6px solid #000000;
+    box-shadow:5px 5px 5px rgba(0, 0, 0, 0.3);
     box-sizing: border-box;
     float: left;
     margin-right: 0.5em;
