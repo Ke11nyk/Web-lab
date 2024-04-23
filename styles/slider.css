@@ -3,13 +3,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url('../images/slider.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .slider_bar {
     height: 100%;
     display: flex;
     flex-direction: row;
-    width: 70%;
+    width: 100%;
     position: relative;
 }
 @media screen and (min-width: 1200px) and (max-width: 1300px) {
@@ -49,34 +52,34 @@
 }
 
 .sl1 .slide{
-    background: url("https://th.bing.com/th/id/R.bff4b7da8a792ff85a0ee7a1d266b827?rik=RJ3H%2fc5l8zyD1g&riu=http%3a%2f%2f2.bp.blogspot.com%2f-0KeNxk83cjc%2fUhhh4pQwSBI%2fAAAAAAAAAFU%2fZe079qoTjIc%2fs1600%2fSteinsGateWallpaper.jpg&ehk=vGR6RuHnqsGrKQhA63Uvm3JJYdKPVBbq0H2igo%2bOFv0%3d&risl=&pid=ImgRaw&r=0") no-repeat center center;
+    background: url('../images/slide1.png') no-repeat center center;
     background-size: cover;
 }
 .sl2 .slide{
-    background: url("https://vignette.wikia.nocookie.net/steins-gate/images/6/61/FRNDV.jpg/revision/latest?cb=20180602140538") no-repeat center center;
+    background: url('../images/slide2.png') no-repeat center center;
     background-size: cover;
 }
 .sl3 .slide{
-    background: url("https://th.bing.com/th/id/R.fa5bd58f98b9dbb0569c7eae624275ea?rik=0q4KZgf7IRLYPQ&pid=ImgRaw&r=0") no-repeat center center;
+    background: url('../images/slide3.png') no-repeat center center;
     background-size: cover;
     background-position-y: 0;
 }
 .sl4 .slide{
-    background: url("https://i.redd.it/dvm703m3baf01.jpg") no-repeat center center;
+    background: url('../images/slide4.png') no-repeat center center;
     background-size: cover;
 }
 .sl5 .slide{
-    background: url("https://th.bing.com/th/id/R.c9a9943c90faef0fad3198d98b2db0f6?rik=q6TRXdnsYXQICQ&riu=http%3a%2f%2f1.bp.blogspot.com%2f-pXUm38A91oc%2fUj9R4xB_g-I%2fAAAAAAAAASw%2f5VVWt2w3GZs%2fs1600%2fSteins-Gate.jpg&ehk=uRD1guvSh%2bo6C1b9W4x%2bbQ%2brJOVy8vbaMcJOzMrdZ2Q%3d&risl=&pid=ImgRaw&r=0") no-repeat center center;
+    background: url('../images/slide5.png') no-repeat center center;
     background-size: cover;
     background-position-y: 0;
 }
 .slide{
-    width: 100%;
+    width: 70%;
     height: 100%;
     opacity: 0;
     z-index: 0;
     transition: 0.8s, opacity 0.6s, -webkit-filter 2.5s ease-out;
-
+    margin: 0 15%;
 }
 
 
@@ -92,7 +95,6 @@
 .slides {
     display: block;
     align-items: center;
-    border-radius: 6px 6px 0 0;
     box-shadow: 0 7px 20px rgba(0, 0, 0, 0.3);
     position: relative;
     overflow: hidden;
